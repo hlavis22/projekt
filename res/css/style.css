@@ -15,3 +15,16 @@ html{
     background-size: cover;
     
 }
+#upgradeClickButton{
+    display: table;
+    margin: 0 auto;
+    font-size: 24px;
+    border: none;
+    color: white;
+    background-color: chartreuse;
+    cursor: pointer;
+    transition: .2s ease;
+}
+#upgradeClickButton:hover{
+    transform: scale(1.3);
+}
