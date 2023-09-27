@@ -1,0 +1,17 @@
+#cookie {
+    max-width: 120px;
+    width: 100%;
+    display: table;
+    margin: 0 auto;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+    color: white;
+}
+html{
+    background-image: url("../img/IwWBH3.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
