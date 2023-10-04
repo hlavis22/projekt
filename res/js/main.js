@@ -5,6 +5,7 @@ const upgradeAutoClickButton = document.getElementById("upgradeAutoClickButton")
 
 let numberOfCookies = 0;
 let clickIncrease = 1;
+let clickUpgradePrice = 50;
 let autoclickIncrease = 0;
 let autoclicker;
 let autoclickerPrice = 100;
@@ -21,12 +22,13 @@ cookie.onclick = () => {
 }
 
 upgradeClickButton.onclick = () => {
-    if (numberOfCookies >= 50) {
+    if (numberOfCookies >= clickUpgradePrice) {
      //odectu cenu ugradu
-     numberOfCookies -= 50;
+     numberOfCookies -= clickUpgradePrice;
      //numberOfCookies - 50;
      counter.innerHTML = "Cookies: " + numberOfCookies;
-     //
+     clickUpgradePrice+= 50;
+     upgradeClickButton.innerText = "Buy click upgrade:" + clickUpgradePrice;
      clickIncrease++;
     }
 }
