@@ -1,3 +1,8 @@
+*{
+    user-select: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 #cookie {
     max-width: 120px;
     width: 100%;
@@ -8,7 +13,7 @@
 }
 p{
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 html{
     background-image: url("../img/skysports-old-trafford-manchester-united_5461096.jpg");
@@ -21,10 +26,10 @@ html{
     margin: 0 auto;
     font-size: 24px;
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     background-color: transparent;
     cursor: pointer;
-    transition: .2s ease;
+    transition: 0.5s ease;
 }
 #upgradeClickButton:hover #upgradeAutoClickButton{
     transform: scale(1.3);
@@ -35,8 +40,52 @@ html{
     margin: 0 auto;
     font-size: 24px;
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     background-color: transparent;
     cursor: pointer;
     transition: .2s ease;
 }
+.upgradeImg{
+    max-width: 30px;
+    width: 100%;
+    margin: 1em;
+}
+#upgradeClickButtonWrapper{
+    border: 9px solid rgb(255, 12, 12);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    cursor: pointer;
+    transition: .2s ease;
+    width: 175px;
+    height: 150px;
+    margin: auto;
+}
+#autoClickButton{
+    border: 9px solid rgb(255, 12, 12);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    cursor: pointer;
+    transition: .2s ease;
+    width: 175px;
+    height: 150px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  button:hover {
+    background-color: #6bff16;
+    color: #ff2727;
+    transform: scale(1.1);
+  }
+  

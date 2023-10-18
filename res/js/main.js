@@ -18,7 +18,7 @@ cookie.onclick = () => {
     // ++ inkrement
     numberOfCookies+= clickIncrease;
     console.log(numberOfCookies);
-    counter.innerHTML = "Cookies: " + numberOfCookies;
+    counter.innerHTML = "Ten Hags: " + numberOfCookies;
 }
 
 upgradeClickButton.onclick = () => {
@@ -26,7 +26,7 @@ upgradeClickButton.onclick = () => {
      //odectu cenu ugradu
      numberOfCookies -= clickUpgradePrice;
      //numberOfCookies - 50;
-     counter.innerHTML = "Cookies: " + numberOfCookies;
+     counter.innerHTML = "Ten Hags: " + numberOfCookies;
      clickUpgradePrice+= 50;
      upgradeClickButton.innerText = "Buy click upgrade:" + clickUpgradePrice;
      clickIncrease++;
@@ -38,7 +38,7 @@ upgradeAutoClickButton.onclick = () => {
         numberOfCookies -= autoclickerPrice;
 
         //aktulizuji odstavec
-        counter.innerHTML = "Cookies: " + numberOfCookies;
+        counter.innerHTML = "Ten Hags: " + numberOfCookies;
         autoclickerPrice +=100;
         upgradeAutoClickButton.innerText = "Buy autoclick upgrade: " + autoclickerPrice;
         //zvedneme autoclicker hodnotu
@@ -49,11 +49,11 @@ upgradeAutoClickButton.onclick = () => {
         //opakovani po case pro pridavani susenky
         autoclicker = setInterval(()=>{
             numberOfCookies += autoclickIncrease;
-            counter.innerHTML = "Cookies: " + numberOfCookies;
+            counter.innerHTML = "Ten Hags: " + numberOfCookies;
         }, 1000);
     }
 };
-
+/*
 const turnOnCheats = () => {
     numberOfCookies+= 1000000;
     counter.innerText = "Cookies" + numberOfCookies;
@@ -65,4 +65,4 @@ turnOnCheats();
 function turnOnSuperCheats(){
     numberOfCookies+= 10000000;
     counter.innerText = "Cookies: " + numberOfCookies
-}
+}*/
